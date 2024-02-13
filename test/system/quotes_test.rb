@@ -8,7 +8,7 @@ class QuotesTest < ApplicationSystemTestCase
   # end
   # 
   setup do
-    @quote = quotes(:first)
+    @quote = Quote.ordered.first
   end
 
   test "Showing a quote" do
